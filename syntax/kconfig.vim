@@ -7,11 +7,13 @@ if exists("b:current_syntax")
   finish
 endif
 
-syn keyword kconfigKeywords config menu endmenu choice endchoice include
+syn keyword kconfigKeywords config menu endmenu choice endchoice
+syn keyword kconfigPreproc source
 syn keyword kconfigAttrs bool default help visible select depends
 
 let b:current_syntax = "kconfig"
 
 hi def link kconfigKeywords Statement
 hi def link kconfigAttrs Type
+hi def link kconfigPreproc PreProc
 
